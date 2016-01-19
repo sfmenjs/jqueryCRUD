@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>coder-camps-js</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body>
+	<br>
+	<div class="well container form-inline" style="text-align: center;">
+		<input id="inputTitle" placeholder="Title..." class="form-control" />
+		<input id="inputGenre" placeholder="Genre..." class="form-control" />
+		<input id="inputRating" placeholder="Rating..." class="form-control" />
+		<button type="button"class="btn btn-success" onclick="createMovie();">Submit</button>
+	</div>
+	<br>
+	<div id="display-movies"></div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+					<br>
+					<label>Title</label>
+					<input type="text" class="form-control" placeholder="Title" id="editTitle" />
+					<br>
+					<label>Genre</label>
+					<input type="text" class="form-control" placeholder="Genre" id="editGenre" />
+					<br>
+					<label>Rating</label>
+					<input type="text" class="form-control" placeholder="Rating" id="editRating" />
+					<br>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<span id="edit-buttons"></span>
+			  </div>
+	    </div>
+	  </div>
+	</div>
+	<script src="/jquery/dist/jquery.min.js"></script>
+	<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/javascript/app.js"></script>
+</body>
+</html>
